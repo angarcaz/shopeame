@@ -1,1 +1,36 @@
-<p>formulario works!</p>
+<h2>Creación/edición de productos</h2>
+
+<!-- validadores
+put
+stars -->
+
+<div class="container">
+    <div class="gestion-form">
+        <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+            <fieldset>
+                <label for="name">Nombre del producto:</label>   
+                <input id="name" type="text" formControlName="name" placeholder="Por ej: Tiesto para planta" />
+            </fieldset>
+            <fieldset>    
+                <label for="price">Precio:</label>   
+                <input id="price" type="text" formControlName="price" placeholder="Por ej: 9.50">
+            </fieldset>
+            <fieldset>
+                <label for="description">Descripción:</label>
+                <input id="description" type="text" formControlName="description" placeholder="Por ej: Lo más vendido de este mes">
+            </fieldset>
+            <fieldset>
+                <label for="image">Ruta de la imagen:</label>
+                <input id="image" formControlName="image" placeholder="Por ej: http://blabla.com/img.jpg">
+            </fieldset>
+            <fieldset>
+                <label for="stars">Opiniones:</label>
+                <input id="stars" formControlName="stars" placeholder="Introduce un número del 1 al 5">
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form> 
+    </div>
+    <div class="gestion-preview">
+        <app-simulador [product]="newItem"></app-simulador>
+    </div>
+</div>

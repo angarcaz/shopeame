@@ -10,8 +10,21 @@ export class ProductoServicioService {
 
   constructor(private http: HttpClient) { }
 
+  public itemData = {
+    id: "",
+    name: "",
+    price: "", 
+    description: "",
+    stars: "",
+    image: ""
+  }
+
   getProducts(){
     return this.http.get(this.products_url);
+  }
+
+  postItem(item:any) {
+    return this.http.post(this.products_url,item)
   }
 
 }

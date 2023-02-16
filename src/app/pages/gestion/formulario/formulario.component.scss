@@ -1,0 +1,42 @@
+.container {
+    border: 1px solid red;
+    display: flex;
+    width: 80%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+    fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    }
+
+    label {
+        margin: 20px 0 10px 0;
+    }
+
+    input {
+        padding: 10px 5px;
+    }
+
+    button {
+        margin: 20px 0 0 0;
+        width: 200px;
+        height: 35px;
+    }
+}
+
+
+.gestion-form {
+    border: 1px solid black;
+    width: 70%;
+}
+
+.gestion-preview{
+    border: 1px solid blue;
+    width: 30%;
+}

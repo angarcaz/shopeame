@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class ProductoServicioService {
 
-  products_url: string = "https://my-json-server.typicode.com/franlindebl/shopeame-api-v2/products"
+  products_url: string = "http://localhost:3000/newProducts"
 
   constructor(private http: HttpClient) { }
 

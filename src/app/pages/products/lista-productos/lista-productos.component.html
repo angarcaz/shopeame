@@ -1,13 +1,19 @@
-<h2>Listado de productos</h2>
+<app-producto></app-producto>
+<app-vista></app-vista>
+
+<div class="container">
+    <h2>Productos</h2>
+</div>
 
 <div class="product">
-    <div *ngFor="let product of productsList">
+    <ul *ngFor="let product of productsList">
         <img src="{{product.image}}" alt="{{product.name}}">
         <h4>{{product.id}}</h4>
         <h4>{{product.name}}</h4>
         <h4>{{product.description}}</h4>
         <h4>{{product.price}}</h4>
         <h4>{{product.stars}}</h4>
-    </div>
+    </ul>
         
 </div>
+

@@ -1,3 +1,17 @@
-.product{
-    display: flex
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+.product {
+display: flexbox;
+column-count:4;
+column-gap: 3em;
+column-rule: 2px solid #bbb;
+border-spacing: 10px 5px;
+
+}
+img {
+  height: 30%;
+  width: 30%;
+
 }

@@ -8,9 +8,5 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
 
 
-  // menuDinamico=[{
-  //   'titulo':
-  //   'icono':
-  //   'url':
-  // }]
+ 
 }

@@ -1,19 +1,27 @@
 
-<div class="fechaFooter">
-    <nav>
-        <p> hoy es; </p>
-        {{ fecha | date: 'medium' }}
-    </nav>
+    <!-- crear listado de contacto -->
+    <div class="footer">
+    
     <div class="contCreadoras">
+        <ul>
         <p>
-            Síguenos en nuestros perfiles:
-        <li> Ángela </li>
-        <i class="fa-brands fa-facebook"></i> |<i class="fa-brands fa-facebook"></i>| <i class="fa-brands fa-instagram"></i> | TikTok
-        <li> Vanessa </li> 
-            Twitter | Facebook | Instagram | TikTok
-        <li> Mairam </li> 
-            Twitter | Facebook | Instagram | TikTok
-    </p>
+        Síguenos en nuestros perfiles: </p>
+        <li class="angela"> Ángela </li>
+        <i class="fab fa-twitter-square"></i> | <i class="fab fa-github-square"></i> | <i class="fab fa-linkedin"></i>   
+        <li class="vane"> Vanessa </li> 
+        <i class="fab fa-twitter-square"></i> | <i class="fab fa-github-square"></i> | <i class="fab fa-linkedin"></i> 
+        <li class="mairam"> Mairam </li> 
+        <i class="fab fa-twitter-square"></i> | <i class="fab fa-github-square"></i> | <i class="fab fa-linkedin"></i>   
+</ul>
+</div>
+
+<!--Copyrigth más la fecha y hora actual-->
+<div class="Copyright">
+    <p> Copyright Shopéame © {{fecha | date: 'yyyy' }}</p>
+   
+    <nav class="fechaFooter">
+        <p> Hoy es {{ fecha | date: 'fullDate' }} </p> 
+    </nav>
 </div>
 
 </div>

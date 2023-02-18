@@ -1,5 +1,6 @@
 import { ProductoServicioService } from './../../../servicios/producto-servicio.service';
 import { Component } from '@angular/core';
+import { productInterface } from 'src/app/models/item-interface';
 
 @Component({
   selector: 'app-lista-productos',
@@ -8,13 +9,12 @@ import { Component } from '@angular/core';
 })
 export class ListaProductosComponent {
 
-  productsList: any[] = [];
+  productsList: productInterface[] = [];
 
   constructor(private productoServicio: ProductoServicioService) {}
 
   ngOnInit(): void {
-    this.productoServicio.getProducts().subscribe((data:any) => {
-      console.log(data)
+    this.productoServicio.getProducts().subscribe((data: productInterface[]) => {
       this.productsList = [...data];
     })
   }

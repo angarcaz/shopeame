@@ -1,5 +1,8 @@
 import { HttpClient } from '@angular/common/http'
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+
+import { productInterface } from 'src/app/models/item-interface';
 
 @Injectable({
   providedIn: 'root'
@@ -10,6 +13,8 @@ export class ProductoServicioService {
 
   constructor(private http: HttpClient) { }
 
+
+  //intentar poner aquí interfaz:
   public itemData = {
     id: "",
     name: "",
@@ -19,8 +24,8 @@ export class ProductoServicioService {
     image: ""
   }
 
-  getProducts(){
-    return this.http.get(this.products_url);
+  getProducts(): Observable<productInterface[]>{
+    return this.http.get<productInterface[]>(this.products_url);
   }
 
   postItem(item:any) {

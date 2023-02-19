@@ -1,3 +1,11 @@
 <h2>Listado de productos</h2>
 
 <input type="search" #filtro (input)="(filtro.value)" placeholder="Buscador"/>
+
+<div class="product">
+    <h4>{{product?.name}}</h4>
+    <img style="width:400px" src="{{product?.image}}" alt="{{product?.name}}">
+    <p>{{product?.description}}</p>
+    <button routerLink="/productos">Volver</button>
+    <button (click)="removeItem()">Eliminar</button>
+</div>

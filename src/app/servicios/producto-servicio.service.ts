@@ -29,7 +29,15 @@ export class ProductoServicioService {
   }
 
   postItem(item:any) {
-    return this.http.post(this.products_url,item)
+    return this.http.post(this.products_url,item);
+  }
+
+  getItem(id:number) {
+    return this.http.get(`${this.products_url}/${id}`)
+  } //Función que añade a la url el id del array
+
+  removeItem(id:number) {
+    return this.http.delete(`${this.products_url}/${id}`);
   }
 
 }

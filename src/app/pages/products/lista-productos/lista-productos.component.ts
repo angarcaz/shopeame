@@ -11,6 +11,8 @@ export class ListaProductosComponent {
 
   productList: productInterface[] = [];
   filteredProduct:any[] = [];
+  val1!: number;
+
 
   constructor(private productoServicio: ProductoServicioService) {}
     filtrar(filtro:any) {

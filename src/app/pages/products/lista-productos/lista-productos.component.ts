@@ -9,13 +9,19 @@ import { productInterface } from 'src/app/models/item-interface';
 })
 export class ListaProductosComponent {
 
-  productsList: productInterface[] = [];
+  productList: productInterface[] = [];
+  filteredProduct:any[] = [];
 
   constructor(private productoServicio: ProductoServicioService) {}
+    filtrar(filtro:any) {
+    this.filteredProduct=this.productList.filter((product)=>product.name.includes(filtro));
+    console.log(this.filteredProduct);
+   }
 
   ngOnInit(): void {
     this.productoServicio.getProducts().subscribe((data: productInterface[]) => {
-      this.productsList = [...data];
+      this.productList = [...data];
+      this.filteredProduct = [...data];
     })
   }
 

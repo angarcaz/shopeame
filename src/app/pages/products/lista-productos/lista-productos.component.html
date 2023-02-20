@@ -2,11 +2,12 @@
 <app-vista></app-vista>
 
 <div class="container">
-    <h2>Productos</h2>
+    <h2>Lista de productos</h2>
 </div>
 
 <div class="product">
-    <ul *ngFor="let product of productsList">
+    <input type="text" #filtro (input)="filtrar(filtro.value)" placeholder="Buscador"/>
+    <ul *ngFor="let product of filteredProduct">
         <img src="{{product.image}}" alt="{{product.name}}">
         <h4>{{product.id}}</h4>
         <h4>{{product.name}}</h4>

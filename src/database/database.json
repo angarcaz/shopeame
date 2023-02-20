@@ -1,7 +1,7 @@
 {
   "newProducts": [
     {
-      "name": "Like nº1",
+      "name": "Spirit",
       "price": 130,
       "description": "Smells like Teen Spirit: Hormones, freshness and the whole future ahead",
       "stars": 4,
@@ -9,7 +9,7 @@
       "id": 1
     },
     {
-      "name": "Like nº2",
+      "name": "Freshly",
       "price": 140,
       "description": "Smells like Freshly Baked Bread: Involuntarily elegant and cosy",
       "stars": 4.5,
@@ -17,7 +17,7 @@
       "id": 2
     },
     {
-      "name": "Like nº3",
+      "name": "Like Angular",
       "price": 127,
       "description": "Smells like Angular: Acid, woody, with pipes of vanilla, module notes and truffled components. Everything you like separately, but together.",
       "stars": 4.7,
@@ -25,7 +25,7 @@
       "id": 3
     },
     {
-      "name": "Like nº4",
+      "name": "Delicious",
       "price": 98,
       "description": "Smells like Calçots i Romesco: Fun and delicious, with hints of barley and ember.",
       "stars": 4.1,
@@ -33,7 +33,7 @@
       "id": 4
     },
     {
-      "name": "Like nº5",
+      "name": "Breeze",
       "price": 119,
       "description": "Smells like a sea breeze: fresh, pleasant and with a great memory of summer.",
       "stars": 3.8,
@@ -41,7 +41,7 @@
       "id": 5
     },
     {
-      "name": "Like nº6",
+      "name": "Christmas",
       "price": 89,
       "description": "Smells like Christmas: cinnamon, freshly ground coffee beans, chocolate and a family atmosphere.",
       "stars": 3.9,
@@ -49,7 +49,7 @@
       "id": 6
     },
     {
-      "name": "Like nº7",
+      "name": "Butterflies",
       "price": 120,
       "description": "Smells like butterflies: the aroma of freedom, nature and purity in its purest form.",
       "stars": 4.8,
@@ -57,7 +57,7 @@
       "id": 7
     },
     {
-      "name": "Like nº8",
+      "name": "Tranquility",
       "price": 114,
       "description": "Smells like tranquility: the aroma of real happiness, when you set your mind to something and meet that goal.",
       "stars": 5,

@@ -10,6 +10,7 @@ import { FormularioComponent } from './gestion/formulario/formulario.component';
 import { SimuladorComponent } from './gestion/simulador/simulador.component';
 
 
+
 @NgModule({
   declarations: [
     HomeComponent,

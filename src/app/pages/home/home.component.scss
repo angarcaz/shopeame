@@ -8,6 +8,7 @@
 
 .home-container {
     width: 80%;
+    padding-bottom: 50px;
 }
 
 .home-image-box {
@@ -55,3 +56,14 @@
     }
 }
 
+.home-a {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #AD7BE9;
+    text-decoration: none;
+}
+
+.home-a:hover {
+    text-decoration: underline;
+    color: #CDE990;
+}

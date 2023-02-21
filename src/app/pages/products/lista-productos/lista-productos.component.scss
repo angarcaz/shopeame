@@ -76,7 +76,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 900px;
+  width: 100%;
 
   img {
     width: 170px;
@@ -86,6 +86,23 @@ ul {
   }
   .product-price {
     font-size: 22px;
+  }
+
+  .primary-button {
+    font-size: 16px;
+    height: 40px;
+    width: 120px;
+    font-weight: bolder;
+    background-color: #fff;
+    color: #AD7BE9;
+    border: 3px solid #AD7BE9;
+    border-radius: 6px;
+  }
+
+  .primary-button:hover {
+    cursor: pointer;
+    border-color: #CDE990;
+    color:  #CDE990;
   }
 }
 
@@ -128,15 +145,25 @@ ul {
   }
 
   .primary-button {
-    font-size: 18px;
+    font-size: 16px;
     height: 40px;
+    width: 120px;
+    font-weight: bolder;
     background-color: #fff;
-    color: #EA8FEA;
-    border-color: #EA8FEA;
+    color: #AD7BE9;
+    border: 3px solid #AD7BE9;
+    border-radius: 6px;
   }
 
   .primary-button:hover {
     cursor: pointer;
+    border-color: #CDE990;
+    color:  #CDE990;
   }
 
 }
+
+/*    font-size: 20px;
+    font-weight: bolder;
+    color: #AD7BE9;
+    text-decoration: none;*/

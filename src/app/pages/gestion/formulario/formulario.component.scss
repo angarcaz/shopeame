@@ -83,3 +83,20 @@
 .fa-circle-exclamation {
     font-size: 16px;
 }
+
+.primary-button {
+  font-size: 16px;
+  height: 40px;
+  width: 120px;
+  font-weight: bolder;
+  background-color: #fff;
+  color: #AD7BE9;
+  border: 3px solid #AD7BE9;
+  border-radius: 6px;
+}
+
+.primary-button:hover {
+  cursor: pointer;
+  border-color: #CDE990;
+  color:  #CDE990;
+}

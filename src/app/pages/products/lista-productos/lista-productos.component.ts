@@ -11,10 +11,22 @@ export class ListaProductosComponent {
 
   productList: productInterface[] = [];
   filteredProduct:any[] = [];
-  val1!: number;
+  lista = false;
+  cuadricula = true;
 
 
   constructor(private productoServicio: ProductoServicioService) {}
+
+    verCuadricula(){
+      this.lista = false;
+      this.cuadricula = true;
+    }
+
+    verLista(){
+      this.lista = true;
+      this.cuadricula = !this.cuadricula;
+    }
+
     filtrar(filtro:any) {
     this.filteredProduct=this.productList.filter((product)=>product.name.includes(filtro));
     console.log(this.filteredProduct);

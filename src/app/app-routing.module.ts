@@ -1,3 +1,5 @@
+import { ProductoComponent } from './pages/products/producto/producto.component';
+
 import { FormularioComponent } from './pages/gestion/formulario/formulario.component';
 import { ListaProductosComponent } from './pages/products/lista-productos/lista-productos.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -8,6 +10,7 @@ const routes: Routes = [
   { path:"", component: HomeComponent },
   { path:"productos", component: ListaProductosComponent },
   { path:"gestion", component: FormularioComponent },
+  { path: "productos/:id", component: ProductoComponent },
   { path:"**", redirectTo: "" },
 ];
 

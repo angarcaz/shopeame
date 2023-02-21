@@ -1,5 +1,7 @@
+import { AppRoutingModule } from './../app-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { HomeComponent } from './home/home.component';
 import { ListaProductosComponent } from './products/lista-productos/lista-productos.component';
@@ -15,7 +17,7 @@ import { SimuladorComponent } from './gestion/simulador/simulador.component';
     ListaProductosComponent,
     ProductoComponent,
     FormularioComponent,
-    SimuladorComponent
+    SimuladorComponent,
   ],
 
   exports: [
@@ -27,7 +29,10 @@ import { SimuladorComponent } from './gestion/simulador/simulador.component';
   ],
 
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
   ]
 })
 export class PagesModule { }

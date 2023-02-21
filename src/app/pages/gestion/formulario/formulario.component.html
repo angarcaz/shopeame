@@ -1,1 +1,128 @@
-<p>formulario works!</p>
+<div class="container">
+  <div class="container-form">
+    <h2>Upload your fragance</h2>
+    <div class="container-form-preview">
+      <div class="gestion-form">
+        <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+          <fieldset>
+            <label for="name">Enter a name:</label>
+            <input
+              id="name"
+              type="text"
+              formControlName="name"
+              placeholder="Por ej: Tiesto para planta"
+            />
+          </fieldset>
+          <fieldset>
+            <label for="price">Price:</label>
+            <input
+              id="price"
+              type="text"
+              formControlName="price"
+              placeholder="Por ej: 9.50"
+            />
+          </fieldset>
+          <fieldset>
+            <label for="description">What it smells like?</label>
+            <input
+              id="description"
+              type="text"
+              formControlName="description"
+              placeholder="Por ej: Lo más vendido de este mes"
+            />
+          </fieldset>
+          <fieldset>
+            <label for="image">Image URL:</label>
+            <input
+              id="image"
+              formControlName="image"
+              placeholder="Por ej: http://blabla.com/img.jpg"
+            />
+          </fieldset>
+          <fieldset>
+            <label for="stars">Rate from 1 to 5:</label>
+            <input
+              id="stars"
+              formControlName="stars"
+              placeholder="Introduce un número del 1 al 5"
+            />
+          </fieldset>
+          <!--SECCIÓN PARA LOS MENSAJES DE ERROR-->
+          <fieldset class="error-fieldset">
+            <!--error nombre-->
+            <div
+              class="errores-form"
+              *ngIf="
+                !productForm.get('name').valid &&
+                (productForm.get('name').dirty || submitted)
+              "
+            >
+              <span
+                ><i class="fa fa-circle-exclamation"></i>¡Introduce un nombre
+                válido!</span
+              >
+            </div>
+            <!--error precio-->
+            <div
+              class="errores-form"
+              *ngIf="
+                !productForm.get('price').valid &&
+                (productForm.get('price').dirty || submitted)
+              "
+            >
+              <span
+                ><i class="fa fa-circle-exclamation"></i>¡Introduce un precio
+                válido!</span
+              >
+            </div>
+            <!--error descripcion-->
+            <div
+              class="errores-form"
+              *ngIf="
+                !productForm.get('description').valid &&
+                (productForm.get('description').dirty || submitted)
+              "
+            >
+              <span
+                ><i class="fa fa-circle-exclamation"></i>¡Introduce una
+                descripción válida!</span
+              >
+            </div>
+            <!--error url-->
+            <div
+              class="errores-form"
+              *ngIf="
+                !productForm.get('image').valid &&
+                (productForm.get('image').dirty || submitted)
+              "
+            >
+              <span
+                ><i class="fa fa-circle-exclamation"></i>¡Introduce una
+                URL!</span
+              >
+            </div>
+            <!--error rating-->
+            <div
+              class="errores-form"
+              *ngIf="
+                !productForm.get('stars').valid &&
+                (productForm.get('stars').dirty || submitted)
+              "
+            >
+              <span
+                ><i class="fa fa-circle-exclamation"></i>¡Introduce un número
+                del 1 al 5!</span
+              >
+            </div>
+          </fieldset>
+          <button class="primary-button" type="submit" [disabled]="!productForm.valid">Submit</button>
+          <!--reset button??-->
+        </form>
+      </div>
+
+      <div class="gestion-preview">
+        <app-simulador [product]="newItem"></app-simulador>
+      </div>
+    </div>
+  </div>
+</div>

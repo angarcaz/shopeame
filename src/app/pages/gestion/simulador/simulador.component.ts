@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-simulador',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./simulador.component.scss']
 })
 export class SimuladorComponent {
+
+  @Input() product!: any;
 
 }

@@ -16,7 +16,7 @@
         <h4>{{product.price}}</h4>
         <h4>{{product.stars}}</h4>
        
-        <ng-container *ngFor="let i of star">
+        <ng-container *ngFor="let i of starsArray">
             <i class="fa-solid fa-star " (click)="starRating(i)" [ngClass]="{'active':i<=rating}"></i>
             </ng-container>
         <button routerLink="/productos/{{product.id}}">Ver más</button>

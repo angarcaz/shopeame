@@ -10,7 +10,7 @@ import { productInterface } from 'src/app/models/item-interface';
 export class ListaProductosComponent {
 
 //para el rating de estrellas
-  star=[1,2,3,4,5];
+  starsArray=[1,2,3,4,5];
   rating = 0;
 
   starRating(sorting:any){

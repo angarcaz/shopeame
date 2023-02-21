@@ -8,8 +8,6 @@ import { Component, Input } from '@angular/core';
 })
 export class SimuladorComponent {
 
-  //Reemplazar los any -> Problemas con interfaz: id
-
   @Input() product!: any;
 
 }

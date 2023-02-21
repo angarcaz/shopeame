@@ -30,8 +30,8 @@ export class FormularioComponent implements OnInit {
       price: [this.newItem.price,[Validators.required, Validators.pattern("^[1-9][0-9]*(\.[0-9]+)?|0+\.[0-9]*[1-9][0-9]*$")]], 
       description: [this.newItem.description,[Validators.required, Validators.minLength(5)]],
       stars: [this.newItem.stars,[Validators.required, Validators.pattern("^[1-5]*$")]], 
-      image: [this.newItem.image,[Validators.required, Validators.pattern("")]] 
-      // AFINAR PATTERN PARA VALIDAR URL image: [this.newItem.image,[Validators.required, Validators.pattern("(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?")]] 
+      image: [this.newItem.image,[Validators.required, Validators.minLength(10)]] 
+      
     });
 
     //Recojo los datos introducidos en el formulario y le asigno esta información a la 

@@ -1,7 +1,19 @@
-.footer{
-
-    background-color: rgb(57, 58, 59);
-    color:grey;
-    display: inline-flexbox;
+footer {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
 }
+
+.footer-container {
+    width: 80%;
+    border-top: 3px solid #000;
+}
+
+ul {
+    list-style: none;
+}
+

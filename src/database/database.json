@@ -5,7 +5,7 @@
       "price": 130,
       "description": "Smells like Teen Spirit: Hormones, freshness and the whole future ahead",
       "stars": 4,
-      "image": "#",
+      "image": "../assets/smells-img.jpg",
       "id": 1
     },
     {
@@ -13,7 +13,7 @@
       "price": 140,
       "description": "Smells like Freshly Baked Bread: Involuntarily elegant and cosy",
       "stars": 4.5,
-      "image": "#",
+      "image": "../assets/smells-img.jpg",
       "id": 2
     },
     {
@@ -21,7 +21,7 @@
       "price": 127,
       "description": "Smells like Angular: Acid, woody, with pipes of vanilla, module notes and truffled components. Everything you like separately, but together.",
       "stars": 4.7,
-      "image": "#",
+      "image": "../assets/smells-img.jpg",
       "id": 3
     },
     {
@@ -29,7 +29,7 @@
       "price": 98,
       "description": "Smells like Calçots i Romesco: Fun and delicious, with hints of barley and ember.",
       "stars": 4.1,
-      "image": "#",
+      "image": "../assets/smells-img.jpg",
       "id": 4
     },
     {
@@ -37,7 +37,7 @@
       "price": 119,
       "description": "Smells like a sea breeze: fresh, pleasant and with a great memory of summer.",
       "stars": 3.8,
-      "image": "#",
+      "image": "../assets/smells-img.jpg",
       "id": 5
     },
     {
@@ -45,7 +45,7 @@
       "price": 89,
       "description": "Smells like Christmas: cinnamon, freshly ground coffee beans, chocolate and a family atmosphere.",
       "stars": 3.9,
-      "image": "#",
+      "image": "../assets/smells-img.jpg",
       "id": 6
     },
     {
@@ -53,7 +53,7 @@
       "price": 120,
       "description": "Smells like butterflies: the aroma of freedom, nature and purity in its purest form.",
       "stars": 4.8,
-      "image": "#",
+      "image": "../assets/smells-img.jpg",
       "id": 7
     },
     {
@@ -61,7 +61,7 @@
       "price": 114,
       "description": "Smells like tranquility: the aroma of real happiness, when you set your mind to something and meet that goal.",
       "stars": 5,
-      "image": "#",
+      "image": "../assets/smells-img.jpg",
       "id": 8
     }
   ]

@@ -1,9 +1,9 @@
-
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .products-container {
@@ -11,28 +11,103 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 90%;
+  max-width: 80%;
+  padding: 0 0 40px 0;
+}
+
+h2 {
+  margin: 35px 0;
+}
+
+/*Buscador y vistas de los productos*/
+
+.show-searcher-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  padding: 10px 0 40px 0;
+
+  input {
+    border-radius: 6px;
+    border: 1px solid #666;
+    width: 40%;
+    padding: 0 12px;
+    font-size: 16px;
+  }
+
+  .vista-buttons-box {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+  }
+
+  .view-button {
+    width: 40px;
+    background-color: #fff;
+    border: 1px solid #666;
+  }
+
+  .view-button:hover {
+    cursor: pointer;
+  }
+
+  .fas, .fa-solid {
+    font-size: 16px;
+  }
+
 }
 
 ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  row-gap: 30px;
+  justify-content: center;
+  row-gap: 0px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+/*estilo en vista lista*/
 .product-card2 {
-  border: 2px solid black;
+  justify-self: center;
+  border-bottom: 3px solid black;
   padding: 20px;
   display: flex;
-  width: 900px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  img {
+    width: 170px;
+  }
+  .name-description {
+    width: 500px;
+  }
+  .product-price {
+    font-size: 22px;
+  }
+
+  .primary-button {
+    font-size: 16px;
+    height: 40px;
+    width: 120px;
+    font-weight: bolder;
+    background-color: #fff;
+    color: #AD7BE9;
+    border: 3px solid #AD7BE9;
+    border-radius: 6px;
+  }
+
+  .primary-button:hover {
+    cursor: pointer;
+    border-color: #CDE990;
+    color:  #CDE990;
+  }
 }
 
+/*estilo en vista cuadricula*/
 .product-card {
-  border: 2px solid red;
   padding: 20px;
   border-radius: 6px;
   max-width: 300px;
@@ -41,7 +116,8 @@ ul {
   justify-content: space-around;
 
   img {
-    max-width: 70%;
+    max-width: 100%;
+    border-radius: 6px;
   }
 
   h3 {
@@ -51,7 +127,7 @@ ul {
   }
 
   .description-box {
-    height: 140px;
+    height: 110px;
   }
 
   .stars-button-box {
@@ -69,15 +145,25 @@ ul {
   }
 
   .primary-button {
-    font-size: 18px;
+    font-size: 16px;
     height: 40px;
+    width: 120px;
+    font-weight: bolder;
     background-color: #fff;
-    color: #EA8FEA;
-    border-color: #EA8FEA;
+    color: #AD7BE9;
+    border: 3px solid #AD7BE9;
+    border-radius: 6px;
   }
 
   .primary-button:hover {
     cursor: pointer;
+    border-color: #CDE990;
+    color:  #CDE990;
   }
 
 }
+
+/*    font-size: 20px;
+    font-weight: bolder;
+    color: #AD7BE9;
+    text-decoration: none;*/

@@ -1,29 +1,48 @@
 <div class="container">
-    <h2>Lista de productos</h2>
+  <h2>Our fragances</h2>
+  <div class="show-searcher-box">
+    <input
+      type="text"
+      #filtro
+      (input)="filtrar(filtro.value)"
+      placeholder="Try to find something!"
+    />
     <div class="vista-buttons-box">
-        <button (click)="verCuadricula()">Cuadrícula</button>
-        <button (click)="verLista()">Lista</button>
+      <button class="view-button" (click)="verCuadricula()">
+        <i class="fas fa-th-large"></i>
+      </button>
+      <button class="view-button" (click)="verLista()">
+        <i class="fa-solid fa-list"></i>
+      </button>
     </div>
+  </div>
 
-    <section class="products-container">
-    <input type="text" #filtro (input)="filtrar(filtro.value)" placeholder="Buscador"/>
+  <section class="products-container">
     <ul>
-        <li [ngClass]="{'product-card': cuadricula, 'product-card2': lista}" *ngFor="let product of filteredProduct">
-            <img src="{{product.image}}" alt="{{product.name}}">
-            <h3>{{product.name}}</h3>
-            <div class="description-box">
-                <p class="product-description">{{product.description}}</p>
-            </div>
-                <h4 class="product-price">{{product.price}} € </h4>
-            <div class="stars-button-box">
-            <p>{{product.stars}}</p>
-            <button class = "primary-button" routerLink="/productos/{{product.id}}">Ver más</button>
-            </div>
-        </li>
+      <li
+        [ngClass]="{ 'product-card': cuadricula, 'product-card2': lista }"
+        *ngFor="let product of filteredProduct"
+      >
+        <img src="{{ product.image }}" alt="{{ product.name }}" />
+        <div class="name-description">
+          <h3>{{ product.name }}</h3>
+          <div class="description-box">
+            <p class="product-description">{{ product.description }}</p>
+          </div>
+        </div>
+        <h4 class="product-price">{{ product.price }} €</h4>
+        <div class="stars-button-box">
+          <p>{{ product.stars }}</p>
+          <button
+            class="primary-button"
+            routerLink="/productos/{{ product.id }}"
+          >
+            Show
+          </button>
+        </div>
+      </li>
     </ul>
-        
-</section>
+  </section>
 </div>
-
 
 <!-- <li [ngClass]="{'product-card': !lista, 'product-card2': lista}" *ngFor="let product of filteredProduct"> -->

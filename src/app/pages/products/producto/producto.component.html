@@ -1,9 +1,21 @@
-
-
-<div class="product">
-    <h4>{{product?.name}}</h4>
-    <img style="width:400px" src="{{product?.image}}" alt="{{product?.name}}">
-    <p>{{product?.description}}</p>
-    <button routerLink="/productos">Volver</button>
-    <button (click)="removeItem()">Eliminar</button>
+<div class="container">
+  <div class="product-container">
+    <div class="product-image">
+      <img
+        style="width: 400px"
+        src="{{ product?.image }}"
+        alt="{{ product?.name }}"
+      />
+    </div>
+    <div class="product-info">
+      <h3>{{ product?.name }}</h3>
+      <p>{{ product?.description }}</p>
+      <p class="product-price">{{ product?.price }}</p>
+      <p>{{ product?.stars }}</p>
+      <div class="product-buttons">
+        <button routerLink="/productos">Back</button>
+        <button (click)="removeItem()">Delete</button>
+      </div>
+    </div>
+  </div>
 </div>

@@ -9,6 +9,15 @@ import { productInterface } from 'src/app/models/item-interface';
 })
 export class ListaProductosComponent {
 
+//para el rating de estrellas
+  stars=[1,2,3,4,5];
+  rating = 0;
+
+  starRating(r:any){
+    this.rating = r
+  }
+
+
   productList: productInterface[] = [];
   filteredProduct:any[] = [];
   val1!: number;

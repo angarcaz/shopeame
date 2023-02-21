@@ -9,6 +9,8 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./producto.component.scss']
 })
 export class ProductoComponent {
+
+
   // productList : any [] = [];
   id!: number;
   product!: productInterface

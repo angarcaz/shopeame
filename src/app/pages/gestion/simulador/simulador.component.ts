@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 
+
 @Component({
   selector: 'app-simulador',
   templateUrl: './simulador.component.html',
@@ -7,7 +8,7 @@ import { Component, Input } from '@angular/core';
 })
 export class SimuladorComponent {
 
-  //Reemplazar los any
+  //Reemplazar los any -> Problemas con interfaz: id
 
   @Input() product!: any;
 

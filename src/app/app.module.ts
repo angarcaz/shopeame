@@ -1,6 +1,9 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {RatingModule} from 'primeng/rating';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,10 +18,13 @@ import { ProductoServicioService } from './servicios/producto-servicio.service';
 
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     CoreModule, 
-    PagesModule
+    PagesModule,
+    FormsModule,
+    RatingModule
   ],
 
   providers: [ProductoServicioService],

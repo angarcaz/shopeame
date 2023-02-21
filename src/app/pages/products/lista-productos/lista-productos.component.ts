@@ -1,5 +1,6 @@
 import { ProductoServicioService } from './../../../servicios/producto-servicio.service';
 import { Component } from '@angular/core';
+import { productInterface } from 'src/app/models/item-interface';
 
 @Component({
   selector: 'app-lista-productos',
@@ -8,15 +9,23 @@ import { Component } from '@angular/core';
 })
 export class ListaProductosComponent {
 
-  productsList: any[] = [];
+  productList: productInterface[] = [];
+  filteredProduct:any[] = [];
+  val1!: number;
+
 
   constructor(private productoServicio: ProductoServicioService) {}
+    filtrar(filtro:any) {
+    this.filteredProduct=this.productList.filter((product)=>product.name.includes(filtro));
+    console.log(this.filteredProduct);
+   }
 
   ngOnInit(): void {
-    this.productoServicio.getProducts().subscribe((data:any) => {
-      console.log(data)
-      this.productsList = [...data];
+    this.productoServicio.getProducts().subscribe((data: productInterface[]) => {
+      this.productList = [...data];
+      this.filteredProduct = [...data];
     })
   }
 
 }
+

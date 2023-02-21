@@ -9,6 +9,7 @@ import { ProductoComponent } from './products/producto/producto.component';
 import { FormularioComponent } from './gestion/formulario/formulario.component';
 import { SimuladorComponent } from './gestion/simulador/simulador.component';
 import { VistaComponent } from './products/vista/vista.component';
+import { RatingComponent } from './products/rating/rating.component';
 
 
 
@@ -19,7 +20,8 @@ import { VistaComponent } from './products/vista/vista.component';
     ProductoComponent,
     FormularioComponent,
     SimuladorComponent,
-    VistaComponent
+    VistaComponent,
+    RatingComponent
   ],
 
   exports: [

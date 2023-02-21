@@ -1,0 +1,10 @@
+<p>rating works!</p>
+
+
+<div class="rating">
+   <ng-container *ngFor="let i of stars">
+      <i class="fa-solid fa-star " (click)="starRating(i)" [ngClass]="{'active':i<=rating}"></i>
+      </ng-container>
+    
+
+

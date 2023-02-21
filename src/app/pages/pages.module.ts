@@ -8,8 +8,6 @@ import { ListaProductosComponent } from './products/lista-productos/lista-produc
 import { ProductoComponent } from './products/producto/producto.component';
 import { FormularioComponent } from './gestion/formulario/formulario.component';
 import { SimuladorComponent } from './gestion/simulador/simulador.component';
-import { VistaComponent } from './products/vista/vista.component';
-
 
 
 @NgModule({
@@ -19,7 +17,6 @@ import { VistaComponent } from './products/vista/vista.component';
     ProductoComponent,
     FormularioComponent,
     SimuladorComponent,
-    VistaComponent
   ],
 
   exports: [

@@ -1,15 +1,46 @@
-.containerLogo{
-
+header {
+    width: 100%;
     display: flex;
-    background-color: #ffd000;
-    
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.menuitem {
 
+.header-container{
     display: flex;
-    padding: 10px 5px 10px 5px;
-    margin-right: 10px;
-    color: black;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 20px 0;
+    border-bottom: 3px solid #000;
+}
 
+h1 {
+    font-family: 'Gloock', serif;
+    font-size: 4em;
+    margin: 0;
+}
+
+.menu-container {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+}
+
+.menu-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.fas {
+    color: #000;
 }

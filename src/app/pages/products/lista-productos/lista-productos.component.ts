@@ -10,7 +10,7 @@ import { productInterface } from 'src/app/models/item-interface';
 export class ListaProductosComponent {
 
   productList: productInterface[] = [];
-  filteredProduct:any[] = [];
+  filteredProduct: productInterface[] = [];
   lista = false;
   cuadricula = true;
 
@@ -28,7 +28,7 @@ export class ListaProductosComponent {
     }
 
     filtrar(filtro:any) {
-    this.filteredProduct=this.productList.filter((product)=>product.name.includes(filtro));
+    this.filteredProduct=this.productList.filter((product)=>product.name.toLowerCase().includes(filtro.toLowerCase()));
     console.log(this.filteredProduct);
    }
 

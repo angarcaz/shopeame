@@ -1,13 +1,40 @@
 .container {
-    border: 1px solid red;
-    display: flex;
-    width: 80%;
-}
-
-form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .container-form {
+    border: 2px solid red;
+    width: 80%;
+  }
+
+  .container-form-preview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid green;
+  }
+
+  .gestion-preview {
+    border: 2px solid pink;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gestion-form {
+    border: 3px solid blue;
     width: 60%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
     fieldset {
     display: flex;
@@ -16,12 +43,20 @@ form {
     }
 
     label {
-        margin: 20px 0 10px 0;
+        margin: 10px 0 10px 0;
     }
 
     input {
         padding: 10px 5px;
+        width: 50%;
+        border-radius: 6px;
+        border: 1px solid #666;
     }
+
+    input.ng-dirty.ng-invalid {
+        background-color:#FEE0DF;
+        border: 1px solid red;
+      }
 
     button {
         margin: 20px 0 0 0;
@@ -30,13 +65,21 @@ form {
     }
 }
 
-
-.gestion-form {
-    border: 1px solid black;
-    width: 70%;
+.row-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.gestion-preview{
-    border: 1px solid blue;
-    width: 30%;
+.errores-form {
+    color: red;
+    font-size: 14px;
+    border: 1px solid red;
+    margin: 0 auto;
+    padding: 5px;
 }
+
+.fa-circle-exclamation {
+    font-size: 16px;
+}
+

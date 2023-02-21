@@ -11,6 +11,8 @@ const routes: Routes = [
   { path:"productos", component: ListaProductosComponent },
   { path:"gestion", component: FormularioComponent },
   { path: "productos/:id", component: ProductoComponent },
+  { path: "about",loadChildren: ()=>
+    import('./pages/lazy-loading/about/about.component').then(m => m.AboutComponent)},
   { path:"**", redirectTo: "" },
 ];
 

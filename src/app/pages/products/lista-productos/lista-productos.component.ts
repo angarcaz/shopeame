@@ -9,6 +9,10 @@ import { productInterface } from 'src/app/models/item-interface';
 })
 export class ListaProductosComponent {
 
+  starsArray=[1,2,3,4,5];
+  rating!: number;
+
+
   productList: productInterface[] = [];
   filteredProduct: productInterface[] = [];
   lista = false;
@@ -16,6 +20,10 @@ export class ListaProductosComponent {
 
 
   constructor(private productoServicio: ProductoServicioService) {}
+
+  starRating(sorting:any){
+    this.rating = sorting
+  }
 
     verCuadricula(){
       this.lista = false;

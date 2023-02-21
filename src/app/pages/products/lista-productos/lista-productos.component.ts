@@ -24,7 +24,7 @@ export class ListaProductosComponent {
 
     verLista(){
       this.lista = true;
-      this.cuadricula = !this.cuadricula;
+      this.cuadricula = false;
     }
 
     filtrar(filtro:any) {

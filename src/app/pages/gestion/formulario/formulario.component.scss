@@ -4,22 +4,24 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 20px 0;
   }
 
   .container-form {
-    border: 2px solid red;
-    width: 80%;
+    width: 70%;
+  }
+
+  h2{
+    text-align: center;
   }
 
   .container-form-preview {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 2px solid green;
   }
 
   .gestion-preview {
-    border: 2px solid pink;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -27,8 +29,9 @@
   }
 
   .gestion-form {
-    border: 3px solid blue;
     width: 60%;
+    display: flex;
+    justify-content: center;
   }
 
   form {
@@ -48,38 +51,35 @@
 
     input {
         padding: 10px 5px;
-        width: 50%;
+        width: 100%;
         border-radius: 6px;
         border: 1px solid #666;
     }
 
     input.ng-dirty.ng-invalid {
-        background-color:#FEE0DF;
+        background-color: #F9D6DA;
         border: 1px solid red;
       }
+    input.ng-valid {
+        background-color: aquamarine;
+    }
 
     button {
-        margin: 20px 0 0 0;
+        margin: 0 auto;
         width: 200px;
         height: 35px;
     }
-}
-
-.row-input {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 .errores-form {
     color: red;
     font-size: 14px;
     border: 1px solid red;
+    border-radius: 6px;
     margin: 0 auto;
-    padding: 5px;
+    padding: 3px 10px;
 }
 
 .fa-circle-exclamation {
     font-size: 16px;
 }
-
